@@ -15,4 +15,9 @@ spring:
     gateway:
       discovery.locator:
         enabled: true
-        lowerCaseServiceId: true      
+        lowerCaseServiceId: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
