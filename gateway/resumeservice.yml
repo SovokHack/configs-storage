@@ -17,3 +17,8 @@ eureka:
       defaultZone: http://eurekaserver:8076/eureka/
 server:
   port: 8060
+managment:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
