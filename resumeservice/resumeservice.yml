@@ -15,8 +15,6 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eurekaserver:8076/eureka/
-springdoc:
-  show-actuator: true
 server:
   port: 8060
 management:
