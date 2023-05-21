@@ -13,15 +13,6 @@ eureka:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: openapi
-          uri: http://localhost:${server.port}
-          predicates:
-            - Path=/v3/api-docs/**
-            - Path=/v3/api-ui/**
-          filters:
-            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
-            - RewritePath=/v3/api-ui/(?<path>.*), /$\{path}/swagger-ui/index.html
       discovery.locator:
         enabled: true
         lowerCaseServiceId: true
