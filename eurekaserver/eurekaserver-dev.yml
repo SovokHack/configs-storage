@@ -4,20 +4,3 @@ server:
 eureka:
     instance:
         hostname: amvera-isidi-run-sovcombank-hackathon-eurekaserver
-    client:
-        registerWithEureka: false
-        fetchRegistry: false
-        serviceUrl:
-            defaultZone:
-                http://${eureka.instance.hostname}:${server.port}/eureka/
-    server:
-        waitTimeInMsWhenSyncEmpty: 5
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
