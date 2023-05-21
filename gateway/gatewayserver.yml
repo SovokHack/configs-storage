@@ -23,6 +23,11 @@ spring:
       discovery.locator:
         enabled: true
         lowerCaseServiceId: true
+springdoc:
+  swagger-ui:
+    urls:
+      - name: resumeservice
+        url: /v3/api-docs/resumeservice
 management:
   endpoint:
     gateway:
